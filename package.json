@@ -1,0 +1,38 @@
+{
+  "name": "covid-19-nj",
+  "version": "1.0.0",
+  "description": "Tracker for covid-19 in NJ.",
+  "main": "app.js",
+  "dependencies": {
+    "@google/maps": "^1.1.0",
+    "@googlemaps/google-maps-services-js": "^2.3.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "neat-csv": "^5.2.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon -L --exec babel-node src/app.js",
+    "serve": "babel-node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sammy Samkough",
+  "license": "ISC"
+}
